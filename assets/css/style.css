@@ -4,9 +4,9 @@
     box-sizing: border-box;
 }
 body {
-    color:rgb(139, 79, 0);
+    color:coral;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: rgb(245, 198, 110)
+    background-color: rgb(253, 219, 180)
   }
 
 #headshot {
@@ -20,7 +20,7 @@ header {
 }
 
 header h1 {
-    color: rgb(139, 79, 0);
+    color:coral;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
     font-size: 36px;
@@ -29,7 +29,7 @@ header h1 {
 
 header a {
     text-decoration: none;
-    color:rgb(192, 106, 36)
+    color:coral
 }
 
 header nav {
@@ -63,28 +63,22 @@ header nav a:hover {
     color: black;
     text-shadow: none;
 }
-.one-qtr {
+.one-qrt {
     flex: 0 0 15%;
+    float: left;
+    width: 10%;
+    font-size: 30px;
+    margin: 0 15%;
 }
 /* images */
-#back-image {
-    background-image:
-        linear-gradient(to bottom, rgba(0,0,0,1), transparent),
-        url("./images/maxresdefault.jpg");
-    background-size: cover;
-    background-position: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    background-attachment: fixed;
-}
+
 #port-image {
-    height: 10%;
-    width: 50%;
-    border: 2px solid white;
+    height: 50%;
+    width: 100%;
     text-align: end;
     color: white;
-    background-color: rgb(245, 157, 75);
+    text-align: justify;
+    border-bottom: 2px solid coral;
 }
 #about-me {
     width: 100%;
@@ -96,32 +90,30 @@ header nav a:hover {
     flex-direction: row;
     align-items: stretch;
 }
-/* images */
-#back-image {
-    background-image:
-        linear-gradient(to bottom, rgba(0,0,0,1), transparent);
-    background-size: cover;
-    background-position: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    background-attachment: fixed;
+
+#content {
+    float: center;
 }
+
+/* images */
+
 #port-image {
     height: 50%;
     width: 100%;
     border: 2px solid white;
     text-align: end;
     color: white;
-    background-color: orange;
+    background-color: coral;
 }
 /* about me section */
+
 #about-me > .one-qtr > h2 {
     text-align: right;
-    border-right: 2px solid orange;
+    border-right: 2px solid coral;
 }
 #about-me > article {
     flex: 0 0 75%;
+    border-left: 10px coral;
 }
 #about-me p {
     font-size: 20px;
@@ -148,14 +140,14 @@ header nav a:hover {
 #work {
     width: 100%;
     padding: 5px 0;
-    color: white;
+    color: coral;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     flex-direction: row;
     align-items: stretch;
 }
-.flexContainer {
+.flexContainer img {
     margin: 3px 3px;
     padding: 2px 2px;
     height: 600px;
@@ -164,8 +156,9 @@ header nav a:hover {
     flex-wrap: wrap;
     justify-content: space-between;
     border: 2px solid white;
+    float: right;
 }
-.workFlex {
+.workFlex img {
     margin: 2px 2px;
     background-repeat: no-repeat;
     background-position: center;
@@ -176,25 +169,28 @@ header nav a:hover {
     border-radius: 8px;
 }
 .runBuddy {
-    background-image: url(./assets/images/hero-bg.jpg);
-    height: 400px;
+    background-image;
+    background-repeat: no-repeat;
     width: 100%;
+    height: 20%;
+    float: right;
 }
 .blank {
-    background-image: url(./assets/images/Aesthetic background (2) .png);
-    height: 200px;
-    width: 49%;
+    background-image;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 20%;
 }
 .blank2 {
-    background-image: url(./assets/images/asthetic.jpg);
-    height: 200px;
-    width: 49%;
+    background-image;
+    height: 10%;
+    width: 10%;
 }
 
 /* footer */
 #contact > .one-qtr > h2 {
     text-align: right;
-    border-right: 2px solid orange;
+    border-right: 2px solid rgb(245, 146, 101);
     flex: 0 0 25%;
 }
 #contact {
@@ -216,7 +212,7 @@ header nav a:hover {
 }
 #contact > nav > a:hover {
     background: white;
-    color: black;
+    color: rgb(226, 153, 111);
     border-radius: 5px 5px;
     font-size: large;
 }
