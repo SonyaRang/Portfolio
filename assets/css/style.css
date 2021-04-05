@@ -9,6 +9,12 @@ body {
     background-color: rgb(245, 198, 110)
   }
 
+#headshot {
+    height: 10%;
+    width: 10%;
+    border-radius: 50%;
+}
+
 header {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -64,7 +70,7 @@ header nav a:hover {
 #back-image {
     background-image:
         linear-gradient(to bottom, rgba(0,0,0,1), transparent),
-        url("");
+        url("./images/maxresdefault.jpg");
     background-size: cover;
     background-position: center;
     justify-content: center;
@@ -93,8 +99,7 @@ header nav a:hover {
 /* images */
 #back-image {
     background-image:
-        linear-gradient(to bottom, rgba(0,0,0,1), transparent),
-        url("");
+        linear-gradient(to bottom, rgba(0,0,0,1), transparent);
     background-size: cover;
     background-position: center;
     justify-content: center;
@@ -154,7 +159,7 @@ header nav a:hover {
     margin: 3px 3px;
     padding: 2px 2px;
     height: 600px;
-    width: 1100px;
+    width: 1600px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -169,4 +174,49 @@ header nav a:hover {
     align-items: flex-start;
     border: 2px solid white;
     border-radius: 8px;
+}
+.runBuddy {
+    background-image: url(./assets/images/hero-bg.jpg);
+    height: 400px;
+    width: 100%;
+}
+.blank {
+    background-image: url(./assets/images/Aesthetic background (2) .png);
+    height: 200px;
+    width: 49%;
+}
+.blank2 {
+    background-image: url(./assets/images/asthetic.jpg);
+    height: 200px;
+    width: 49%;
+}
+
+/* footer */
+#contact > .one-qtr > h2 {
+    text-align: right;
+    border-right: 2px solid orange;
+    flex: 0 0 25%;
+}
+#contact {
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: stretch;
+}
+#contact > nav {
+    flex: 0 0 75%;
+    padding: 5px 0;
+}
+#contact > nav > a {
+    color: white;
+    font-size: large;
+}
+#contact > nav > a:hover {
+    background: white;
+    color: black;
+    border-radius: 5px 5px;
+    font-size: large;
 }
